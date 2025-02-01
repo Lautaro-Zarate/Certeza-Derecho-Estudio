@@ -8,7 +8,6 @@ body{
 }
 .navegacion{
     background-color: #f5f5f5a6;
-    /* padding: 10px; */
     display: flex;
     flex-direction: row;
 }
@@ -21,6 +20,11 @@ body{
     border: none;
     border-radius: 8px;
     font-family: "Libre Baskerville", serif;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+.btn-primary:hover{
+    background: #444;
+    color: #f8f8f8;
 }
 .logo{
     width: 225px;
@@ -71,6 +75,13 @@ body{
 /* CARDS - PASOS */
 .pasos-divorcio-container{
     height: auto;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.9s ease-out, transform 0.6s ease-out;
+}
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 .pasos-divorcio-container{
     display: flex;
@@ -87,7 +98,7 @@ body{
     gap: 10px;
 }
 .pasos-text-container h2{
-    color: #cbc5ea;
+    color: #183642;
     font-size: 3rem;
     text-align: start;
 }
@@ -113,6 +124,10 @@ body{
     border-radius: 15px;
     height: 22rem;
     max-width: 24rem;
+    transition: transform 0.3s ease;
+}
+.card-divorcio:hover{
+    transform: translateY(-15px);
 }
 .icono-card{
     width: 50px;
@@ -127,6 +142,13 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.9s ease-out, transform 0.6s ease-out;
+}
+.show{
+    opacity: 1;
+    transform: translateY(0);
 }
 .servicios-text-container{
     display: flex;
@@ -158,6 +180,10 @@ body{
     width: 350px;
     margin: 15px;
     font-size: .8rem;
+    transition: transform 0.3s ease;
+}
+.card-servicios:hover{
+    transform: translateY(-15px);
 }
 .card-servicios-secondary{
     background-color: #eaeaea;
@@ -173,6 +199,33 @@ body{
     left: 40%;
     bottom: 85%;
     filter: drop-shadow(0 4px 8px 0 rgba(0,0,0,0.2));
+}
+/* RESEÑAS */
+.reseñas-divorcio-container{
+    min-height: auto;
+    background-color: #183642;
+    color: whitesmoke;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.reseñas-divorcio-container h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 10px;
+}
+.reseñas-divorcio-container h3{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.img-reseña{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 /* FAQ */
 .faq-container{
@@ -295,7 +348,7 @@ body{
         padding: 20px;
     }
     .pasos-text-container h2{
-        color: #cbc5ea;
+        color: #183642;
         font-size: 3rem;
         text-align: start;
     }
@@ -330,9 +383,25 @@ body{
     }
     /* RESEÑAS */
     .reseñas-divorcio-container{
-        min-height: 100vh;
-        background-color: #183642;
-        color: whitesmoke;
+        height: 100vh;
+        padding-bottom: 40px;
+    }
+    .reseñas-divorcio-container h2{
+        margin-top: 20px !important;
+        font-size: 3rem;
+    }
+    .reseñas-divorcio-container h3{
+        font-size: 1.2rem;
+    }
+    .img-reseña{
+        width: 550px;
+        height: 550px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .img-container-reseña{
+        width: 100%;
+        padding: 10px;
     }
     /* SERVICIOS */
     .servicios-divorcio-container{
