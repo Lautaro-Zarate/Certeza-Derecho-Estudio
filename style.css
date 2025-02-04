@@ -260,7 +260,7 @@ h1,h2,h3,h4,h5,h6{
     justify-content: center;
     gap: 10px;
     padding: 20px;
-    background-color: #183642;
+    background-color: #091a34 !important;
     margin-top: 40px;
 }
 .faq-container h2{
@@ -521,7 +521,7 @@ h1,h2,h3,h4,h5,h6{
         justify-content: center;
         gap: 10px;
         padding: 20px 250px;
-        background-color: #183642;
+        background-color: #091a34 !important;
         margin-top: 40px;
         height: 100vh;
     }
@@ -551,7 +551,7 @@ h1,h2,h3,h4,h5,h6{
 
     .faq-question {
         width: 100%;
-        background: #eaeaea;
+        background: #ddd;
         border: none;
         border-radius: 10px;
         padding: 15px;
