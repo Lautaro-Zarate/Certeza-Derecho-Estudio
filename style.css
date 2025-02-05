@@ -484,7 +484,7 @@ h1,h2,h3,h4,h5,h6{
         grid-template-columns: 450px 1fr;
         grid-template-rows: 1fr;
         padding: 0px 200px;
-        height: 100vh;
+        height: auto;
     }
     .show{
         opacity: 1;
@@ -544,10 +544,10 @@ h1,h2,h3,h4,h5,h6{
         align-items: center;
         justify-content: center;
         gap: 10px;
-        padding: 20px 250px;
+        padding: 50px 250px;
         background-color: #091a34 !important;
         margin-top: 20px;
-        height: 130vh;
+        height: auto;
     }
     .faq-container .btn-primary{
         width: 350px !important;
