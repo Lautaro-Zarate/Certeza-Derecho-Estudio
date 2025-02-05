@@ -6,6 +6,9 @@
 body{
     font-family: serif;
 }
+p{
+    font-size: 19px;
+}
 h1,h2,h3,h4,h5,h6{
     font-family: "Libre Baskerville", serif;
 }
@@ -55,7 +58,7 @@ h1,h2,h3,h4,h5,h6{
 /* PAGINA DIVORCIO */
 /* HERO */
 .hero-divorcio-container{
-    background-image: url(assets/images/bg-divorcio.jpg);
+    background-image: url(assets/images/bg-divorcio.webp);
     background-position: calc(50% - 300px);
     background-size: cover;
     height: auto;
@@ -353,7 +356,7 @@ h1,h2,h3,h4,h5,h6{
     /* PAGINA DIVORCIO */
     /* HERO */
     .hero-divorcio-container{
-        background-image: url(assets/images/bg-divorcio.jpg) !important;
+        background-image: url(assets/images/bg-divorcio.webp) !important;
         background-position: center !important;
         background-size: cover !important;
         height: 100vh !important;
@@ -366,8 +369,13 @@ h1,h2,h3,h4,h5,h6{
         padding: 20px 0 20px 200px;
     }
     .hero-divorcio-container-secondary p{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         color: #ddd;
+    }
+    .text-btn-container button{
+        width: 400px !important;
+        font-size: 1.3rem;
+        padding: 5px 55px;
     }
     /* CARDS - PASOS */
     .pasos-divorcio-container{
@@ -384,8 +392,9 @@ h1,h2,h3,h4,h5,h6{
     .pasos-text-container{
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
         padding: 20px;
+        width: 70%;
     }
     .pasos-text-container h2{
         color: #091a34;
@@ -426,7 +435,7 @@ h1,h2,h3,h4,h5,h6{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 50px;
+        padding: 20px;
     }
     .reseñas-divorcio-container h2{
         color: #ddd;
@@ -451,7 +460,7 @@ h1,h2,h3,h4,h5,h6{
         justify-content: center;
     }
     .img-reseñas-container img{
-        width: 300px;
+        width: 450px;
         height: 400px;
         object-fit: cover;
         margin-bottom: 50px;
@@ -475,16 +484,16 @@ h1,h2,h3,h4,h5,h6{
         text-align: center;
     }
     .servicios-text-container h2{
-        font-size: 2rem;
+        font-size: 3rem;
         color: #091a34;
-        text-align: justify;
+        text-align: start;
     }
     .card-container{
         display: flex;
         flex-direction: column;
         align-items: center !important;
         justify-content: center;
-        gap: 0;
+        gap: 20px;
     }
     .card-servicios{
         display: flex;
@@ -496,16 +505,17 @@ h1,h2,h3,h4,h5,h6{
     .card-servicios-secondary{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         justify-content: center;
         gap: 10px;
         height: 110px;
     }
     .card-servicios-secondary h3{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        text-align: start;
     }
     .card-servicios-secondary p{
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: #2b2b2b;
     }
     .card-servicios img{
