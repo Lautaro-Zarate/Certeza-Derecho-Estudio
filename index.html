@@ -4,26 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certeza & Derecho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a href="index.html"><img class="navbar-brand logo" src="assets/images/logo.png" alt="Logo"></a>
-            <button class="btn-primary">Contáctanos</button>
+        <div class="container-fluid d-flex justify-content-beetween">
+            <a href="index.html"><img class="navbar-brand logo" src="assets/images/brand.svg" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/divorcio.html">Familia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/deudas.html">Deudas</a></li>
+                    <button class="btn-menu">Contáctanos</button>
+                </ul>
+            </div>
         </div>
     </nav>
     <main>
-        <a href="pages/divorcio.html">IR A PAGINA DE DIVORCIO</a>
-        <section class="hero-container">
-            <div class="hero-container-secondary">
-                <p class="hero-text">Bienvenidos/as a Certeza y Derecho - Estudio Jurídico -</p>
-                <h1 class="hero-title">Estamos aquí para ayudarte a resolver tus problemas legales</h1>
-                <button class="btn-primary">Agenda tu consulta</button>
+        <section class="home-container"></section>
+        <section class="quienes-somos-container">
+            <div class="qs-flex">
+                <div class="qs-card-container">
+                    <div class="qs-card">
+                        <h3><li class="li-qs">Sobre nosotros</li></h3>
+                        <p>Somos un estudio jurídico enfocado donde entendemos que cada caso es único y por ello requiere una atención personalizada. Nuestro equipo de abogados estamos comprometidos en dar una asesoría certera, efectiva y justa a los distintos problemas de Familia y Deudas (o bien conocidas como quiebras) que tienen nuestros clientes.</p>
+                    </div>
+                    <div class="qs-card">
+                        <h3>Asesoría Online y Presencial</h3>
+                        <p>Funcionamos con consultas virtuales, lo que nos permite conectar contigo sin importar su ubicación geográfica.</p>
+                    </div>
+                    <div class="qs-card">
+                        <h3>El Mejor Programa de Pagos</h3>
+                        <p>En nuestro Estudio Certeza y Derecho encontrarás tarifas accesibles y la opción de pago en cuotas.</p>
+                    </div>
+                </div>
+                <div class="qs-card2">
+                    <img src="assets/images/img-qs.jpg" alt="Apreton de manos">
+                </div>
             </div>
         </section>
-        <section></section>
+        <section class="formulario-container">
+            <form id="contact-form">
+                <h2>Ponte en contácto con nosotros</h2>
+                <label>Nombre <br>
+                    <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
+                </label>
+                <label>Email <br>
+                    <input type="email" id="email" name="email" placeholder="Tu Email" required>
+                </label>
+                <label>Mensaje <br>
+                    <textarea id="message" name="message" placeholder="Tu Mensaje" required></textarea>
+                </label>
+                <button type="submit" class="btn-form">Enviar</button>
+            </form>
+        </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="app.js"></script>

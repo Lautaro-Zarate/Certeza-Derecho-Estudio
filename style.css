@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* HOMEPAGE */
 body{
     font-family: serif;
 }
@@ -11,6 +12,9 @@ p{
 }
 h1,h2,h3,h4,h5,h6{
     font-family: "Libre Baskerville", serif;
+}
+a{
+    font-size: 18px;
 }
 .navegacion{
     background-color: #f5f5f5a6;
@@ -32,30 +36,105 @@ h1,h2,h3,h4,h5,h6{
 }
 .btn-primary:hover{
     background: #eeee22;
-    transform: scale(1.1);}
+    transform: scale(1.1);
+}
+.btn-menu{
+    width: 200px;
+    padding: 10px;
+    background-color: #cbad15;
+    color: black;
+    font-size: 19px;
+    border: none;
+    border-radius: 8px;
+    font-family: "Libre Baskerville", serif;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+.btn-menu:hover{
+    background: #eeee22;
+    transform: scale(1.1);
+}
 .logo{
     width: 225px;
     height: 100px;
     object-fit: cover;
 }
-/* HERO */
-.hero-container{
-    background-image: url(assets/images/bg-divorcio.jpg);
-    background-position: left;
-    background-size: cover;
-    height: 90vh;
+.nav-link{
+    font-size: 19px;
+}
+.nav-link:hover{
+    font-weight: 600;
+}
+/* HOME */
+.home-container{
+    height: auto;
     width: 100%;
 }
-.hero-container-secondary{
+/* QUIENES SOMOS */
+.quienes-somos-container{
+    height: auto;
+    width: 100%;
+    padding: 20px;
+}
+.qs-flex{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 20px;
+}
+.li-qs{
+    color: #091a34;
+}
+.qs-card{
+    padding: 10px;
+}
+.qs-card h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #091a34;
+}
+.qs-card p{
+    margin-bottom: 0;
+}
+/* FORMULARIO */
+.formulario-container{
+    background-color: #091a34;
     padding: 20px;
-    color: whitesmoke;
-    background-color: #0000ff59;
-    height: 90vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form h2{
+    color: #ddd;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+label{
+    color: #ddd;
+    font-size: 20px;
+    font-weight: 600;
+}
+input{
+    padding: 10px;
+    border: none;
+    outline: #091a34;
+    min-width: 24.3rem;
+}
+textarea{
+    padding: 10px;
+    border: none;
+    outline: none;
+    min-width: 24.3rem;
+}
+.btn-form{
+    padding: 10px;
+    background-color: #cbad15;
+    color: black;
+    font-size: 20px;
+    font-family: "Libre Baskerville", serif;
 }
 /* PAGINA DIVORCIO */
 /* HERO */
