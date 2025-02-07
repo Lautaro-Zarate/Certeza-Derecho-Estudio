@@ -5,7 +5,7 @@
 }
 /* HOMEPAGE */
 body{
-    font-family: serif;
+    font-family: "Poppins";
 }
 p{
     font-size: 19px;
@@ -31,7 +31,7 @@ a{
     font-size: 19px;
     border: none;
     border-radius: 8px;
-    font-family: "Libre Baskerville", serif;
+    font-family: "Poppins", serif;
     transition: background 0.5s ease, color 0.5s ease;
 }
 .btn-primary:hover{
@@ -46,7 +46,7 @@ a{
     font-size: 19px;
     border: none;
     border-radius: 8px;
-    font-family: "Libre Baskerville", serif;
+    font-family: "Poppins", serif;
     transition: background 0.5s ease, color 0.5s ease;
 }
 .btn-menu:hover{
@@ -57,6 +57,9 @@ a{
     width: 225px;
     height: 100px;
     object-fit: cover;
+}
+.brand{
+    display: none;
 }
 .nav-link{
     font-size: 19px;
@@ -82,6 +85,16 @@ a{
     font-size: 1.7rem;
 }
 .card-text{
+    font-size: 1.3rem;
+}
+.btn-card{
+    width: 100%;
+    background-color: #cbad15;
+    padding: 10px;
+    color: #000;
+    font-family: "Poppins", serif;
+    border: none;
+    border-radius: 10px;
     font-size: 1.3rem;
 }
 /* PASOS */
@@ -120,7 +133,7 @@ a{
     color: #ddd;
     border: 1px solid #cbad15;
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
 }
 .card-step2 h3{
     font-size: 1.8rem;
@@ -158,55 +171,6 @@ a{
     gap: 20px;
     padding: 10px;
     border-bottom: 1px solid #091a34;
-}
-/* FORMULARIO */
-.formulario-container{
-    background-color: #091a34;
-    padding: 20px;
-}
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-form h2{
-    color: #ddd;
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
-}
-label{
-    color: #ddd;
-    font-size: 20px;
-    font-weight: 600;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 10px;
-    padding: 5px;
-}
-input{
-    padding: 10px;
-    border: none;
-    outline: none;
-    width: 100%;
-}
-textarea{
-    padding: 10px;
-    border: none;
-    outline: none;
-    width: 100%;
-}
-.btn-form{
-    padding: 10px;
-    background-color: #cbad15;
-    color: black;
-    font-size: 20px;
-    font-family: "Libre Baskerville", serif;
 }
 /* PAGINA DIVORCIO */
 /* HERO */
@@ -483,7 +447,7 @@ textarea{
         background-color: #f5f5f5a6;
         display: flex ;
         flex-direction: row ;
-        justify-content: space-between !important;
+        justify-content: space-around !important;
     }
     .btn-primary{
         padding: 10px;
@@ -491,11 +455,15 @@ textarea{
         font-size: 18px;
         border: none;
         border-radius: 8px;
-        font-family: "Libre Baskerville", serif;
+        font-family: "Poppins", serif;
     }
     .nav-link{
         font-size: 25px;
-        margin-right: 10px;
+        margin-right: 50px;
+    }
+    .logo{
+        display: inherit;
+        margin-left: 300px;
     }
     /* HOME-PAGE */
     /* SERVICIOS */
@@ -506,10 +474,27 @@ textarea{
         height: 800px;
     }
     .card-title{
-        font-size: 2rem;
+        font-size: 1.7rem;
+        margin: 12px 0;
     }
     .card-text{
-        font-size: 1.6rem;
+        font-size: 1.3rem;
+    }
+    .btn-card-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-card{
+        width: 100%;
+        background-color: #cbad15;
+        padding: 10px;
+        color: #000;
+        font-family: "Poppins", serif;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.3rem;
     }
     /* PASOS */
     .step-container{

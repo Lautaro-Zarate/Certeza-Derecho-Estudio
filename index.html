@@ -6,23 +6,29 @@
     <title>Certeza & Derecho</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid d-flex">
+        <div class="container-fluid navegaciom">
             <a href="index.html"><img class="navbar-brand logo" src="assets/images/brand.svg" alt="Logo"></a>
+            <!-- Botón de menú hamburguesa para móvil -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
+            
+            <!-- Menú de navegación -->
+            <div class="collapse navbar-collapse justify-content-lg-around" id="navbarNav">
+                <a href="index.html"><img class="navbar-brand brand" src="assets/images/brand.svg" alt="Logo"></a>
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="divorcio/divorcio.html">Familia</a></li>
                     <li class="nav-item"><a class="nav-link" href="liquidaciones/deudas.html">Deudas</a></li>
-                    <button class="btn-menu">Contáctanos</button>
+                    <li class="nav-item"><button class="btn-menu">Contáctanos</button></li>
                 </ul>
             </div>
         </div>
@@ -49,7 +55,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">¿Deudas que no te dejan respirar?</h5>
                                 <p class="card-text">Liquidamos tus obligaciones, detenemos cobranzas y limpiamos tu DICOM. Incluye negociación con bancos, protección de bienes y un plan para recuperar tu crédito en menos de 6 meses.</p>
-                                <a href="#" class="btn btn-primary">Quiero salir de mis deudas</a>
+                                <div class="btn-card-container">
+                                    <button class="btn-card">Quiero salir de mis deudas</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -59,7 +67,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">¿Un divorcio lento y lleno de conflictos?</h5>
                                 <p class="card-text">Cerramos tu proceso en 30 días sin audiencias ni contacto con tu ex. Incluye redacción de acuerdos, gestión de custodias (si aplica) e inscripción legal inmediata.</p>
-                                <a href="#" class="btn btn-primary">Resolver mi divorcio hoy</a>
+                                <div class="btn-card-container">
+                                    <button class="btn-card">Resolver mi divorcio hoy</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -69,7 +79,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">¿Demandas o embargos que amenazan tu patrimonio?</h5>
                                 <p class="card-text">Defendemos tus bienes y negociamos con acreedores antes de que sea tarde. Incluye estrategias legales probadas, planes de pago flexibles y protección contra futuras demandas.</p>
-                                <a href="#" class="btn btn-primary">Proteger mis bienes ahora</a>
+                                <div class="btn-card-container">
+                                    <button class="btn-card">Proteger mis bienes ahora</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -99,7 +111,9 @@
                     <p><b class="b-step">Deudas canceladas, divorcios firmados, bienes protegidos.</b> Finalmente, podrás dormir tranquilo, recuperar tu crédito o disfrutar de tiempo con tu familia. Y si surge algo nuevo, seguimos apoyándote.</p>
                 </div>
             </div>
-            <button class="btn-menu">Quiero Mi Plan de Tranquilidad</button>
+            <div class="text-btn-container">
+                <button class="btn-card">Quiero Mi Plan de Tranquilidad</button>
+            </div>
         </section>
         <section class="reseñas-divorcio-container home-reseñas hidden">
             <h2>Hemos Ayudado a Cientos de Personas a Recuperar el Control Financiero.</h2>
@@ -127,25 +141,10 @@
             </div>
             <button class="btn-primary">Hablar con un Experto Ahora</button>
         </section>
-        <section class="formulario-container">
-            <form id="contact-form">
-                <h2>Ponte en contácto con nosotros</h2>
-                <label>Nombre <br>
-                    <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
-                </label>
-                <label>Email <br>
-                    <input type="email" id="email" name="email" placeholder="Tu Email" required>
-                </label>
-                <label>Mensaje <br>
-                    <textarea id="message" name="message" placeholder="Tu Mensaje" required></textarea>
-                </label>
-                <button type="submit" class="btn-form">Enviar</button>
-            </form>
-        </section>
     </main>
     <footer class="bg-dark text-center text-white py-3">
         <div class="container">
-            <p class="mb-0">&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+            <p class="mb-0">&copy;  2025 CertezayDerecho. Todos los derechos reservados</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
