@@ -65,61 +65,77 @@ a{
     font-weight: 600;
 }
 /* HOME */
-.home-container{
-    height: auto;
-    width: 100%;
-    position: relative;
+/* SERVICIOS */
+.servicios-home-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
 }
-.banner-home{
-    width: 100%;
-    height: 25rem;
-    object-fit: cover;
-    position: relative;
+.servicios-home-container h2{
+    font-size: 2rem;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
 }
-.banner-texts{
-    position: absolute;
-    color: #ddd;
-    top: 25%;
-    padding: 20px;
-    width: 250px;
+.card-title{
+    font-size: 1.7rem;
 }
-.banner-texts h1{
-    font-size: 1.5rem;
+.card-text{
+    font-size: 1.3rem;
 }
-.banner-texts p{
-    font-size: 1.2rem;
-}
-/* QUIENES SOMOS */
-.quienes-somos-container{
-    height: auto;
-    width: 100%;
-    padding: 20px;
-}
-.qs-flex{
+/* PASOS */
+.step-container{
+    background-color: #091a34;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    height: auto;
     gap: 20px;
 }
-.li-qs{
-    color: #091a34;
-}
-.qs-card{
+.step-container h2{
+    font-size: 2rem;
+    text-align: center;
+    color: #ddd;
+    margin-top: 10px;
     padding: 10px;
 }
-.qs-card h3{
-    font-size: 1.5rem;
+.card-step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.numero-step{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #cbad15;
+}
+.card-step2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #ddd;
+    border: 1px solid #cbad15;
+    border-radius: 10px;
+    padding: 15px;
+}
+.card-step2 h3{
+    font-size: 1.8rem;
+    color: white !important;
+}
+.b-step{
     font-weight: 600;
-    color: #091a34;
 }
-.qs-card p{
-    margin-bottom: 0;
+/* HOME RESEÑAS */
+.home-reseñas{
+    background-color: white !important;
+    color: #000 !important;
 }
-.qs-card2 img{
-    width: 90%;
-    height: 90%;
-    object-fit: cover;
+.home-reseñas h2,h3{
+    color: #000 !important;
 }
 /* FORMULARIO */
 .formulario-container{
@@ -396,7 +412,7 @@ textarea{
 }
 .faq-container h3{
     font-size: 1.5rem;
-    color: whitesmoke;
+    color: whitesmoke !important;
     text-align: center;
     margin-bottom: 20px;
 }
