@@ -463,7 +463,7 @@ a{
     }
     .logo{
         display: inherit;
-        margin-left: 200px;
+        margin-left: 0;
     }
     /* HOME-PAGE */
     /* SERVICIOS */
