@@ -477,7 +477,7 @@ a{
     .card-title{
         font-size: 1.7rem;
         height: 100px;
-        margin: 12px 0;
+        margin: 10px 25px;
     }
     .card-image{
         height: 260px;
@@ -485,12 +485,15 @@ a{
     .card-text{
         font-size: 1.3rem;
         height: 180px;
+        margin: 10px 30px;
     }
     .btn-card-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 70px 30px;
+        /* padding: 20px 60px; */
     }
     .btn-card{
         width: 100%;
