@@ -30,3 +30,23 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", checkScroll);
     checkScroll(); // Para elementos que ya están en pantalla al cargar
 });
+
+// BOTON A CHAT DE WPP HOMEPAGE
+document.querySelectorAll(".wpp-btn-hp").forEach(button => {
+    button.addEventListener("click", function() {
+        window.open("https://wa.link/xyjz6l", "_blank")
+    })
+})
+
+// BOTON DE CHAT DE WPP DIVORCIO
+document.querySelectorAll(".wpp-btn-divorcio").forEach(button => {
+    button.addEventListener("click", function() {
+        window.open("https://wa.link/pwp0u8", "_blank")
+    })
+})
+// BOTON DE CHAT DE WPP DEUDAS
+document.querySelectorAll(".wpp-btn-deuda").forEach(button => {
+    button.addEventListener("click", function() {
+        window.open("https://wa.link/0xtklm", "_blank")
+    })
+})
