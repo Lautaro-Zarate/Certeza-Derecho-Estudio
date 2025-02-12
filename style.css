@@ -146,6 +146,7 @@ a{
     border: 1px solid #cbad15;
     border-radius: 10px;
     padding: 20px;
+    min-height: 200px;
     transition: transform 0.3s ease !important;
 }
 .card-step2:hover{
