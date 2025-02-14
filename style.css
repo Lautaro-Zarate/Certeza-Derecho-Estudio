@@ -603,11 +603,12 @@ a{
     /* CARDS - PASOS */
     .pasos-divorcio-container{
         min-height: 100vh;
-        margin: 50px 200px;
+        margin: 50px 150px;
     }
     .pasos-divorcio-container button{
         width: 350px !important;
         font-size: 1.4rem !important;
+        margin: 0;
     }
     .pasos-divorcio-container{
         display: flex;
@@ -680,6 +681,7 @@ a{
     .reseñas-divorcio-container button{
         width: 400px !important;
         font-size: 1.2rem;
+        margin: 20px;
     }
     .img-reseñas-container{
         display: flex;
@@ -766,6 +768,8 @@ a{
     }
     .faq-container .btn-primary{
         width: 350px !important;
+        margin: 20px;
+        white-space: nowrap;
     }
     .faq-container h2{
         font-size: 3rem;
