@@ -192,9 +192,6 @@ a{
     padding: 10px;
     border-bottom: 1px solid #091a34;
 }
-.cierre-container button{
-    margin: 0;
-}
 /* PAGINA DIVORCIO */
 /* HERO */
 .hero-divorcio-container{
@@ -825,6 +822,7 @@ a{
         background: #e9ecef;
     }
     /* CIERRE */
-    .cierre-container .btn-primary{
+        .cierre-container .btn-primary{
+        margin: 20px !important;
     }
 }
